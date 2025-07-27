@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>linux-dev.com | Python Dev Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    pre, code {
+      font-family: 'Fira Code', monospace;
+    }
+  </style>
+</head>
+<body class="font-sans leading-relaxed">
+
+  <!-- Header -->
+  <header class="bg-gray-950 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-green-400">linux-dev.com</h1>
+      <nav class="space-x-4 text-gray-300">
+        <a href="#python" class="hover:text-green-400">Python</a>
+        <a href="#about" class="hover:text-green-400">About</a>
+        <a href="#contact" class="hover:text-green-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gray-900 py-20 text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 text-green-400">The Linux Python Dev Hub</h2>
+      <p class="text-lg text-gray-300 mb-8">Explore featured Python scripts, tools, and tutorials crafted for Linux environments.</p>
+      <a href="#python" class="bg-green-500 hover:bg-green-600 text-black px-6 py-3 rounded-lg font-semibold">Browse Python Code</a>
+    </div>
+  </section>
+
+  <!-- Python Code Section -->
+  <section id="python" class="bg-gray-800 py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold text-green-400 mb-10 text-center">Featured Python Code</h3>
+      
+      <!-- Code Card -->
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg mb-10">
+        <h4 class="text-xl font-semibold text-green-300 mb-3">Simple File Backup Script</h4>
+        <pre class="bg-gray-800 text-sm text-green-100 p-4 rounded overflow-x-auto"><code>
+import os
+import shutil
+from datetime import datetime
+
+src_folder = "/home/user/projects"
+backup_folder = f"/home/user/backups/backup-{datetime.now().strftime('%Y%m%d')}"
+
+shutil.copytree(src_folder, backup_folder)
+print("Backup completed.")
+        </code></pre>
+      </div>
+
+      <!-- Add more code blocks as needed -->
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+        <h4 class="text-xl font-semibold text-green-300 mb-3">Monitor CPU Usage</h4>
+        <pre class="bg-gray-800 text-sm text-green-100 p-4 rounded overflow-x-auto"><code>
+import psutil
+import time
+
+while True:
+    print("CPU Usage:", psutil.cpu_percent(), "%")
+    time.sleep(2)
+        </code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 bg-gray-900 text-center px-6">
+    <h3 class="text-3xl font-bold text-green-400 mb-6">About Linux Dev</h3>
+    <p class="max-w-3xl mx-auto text-gray-300">
+      linux-dev.com is dedicated to developers building for Linux platforms using Python, Bash, and open tools. Our mission is to empower coders with practical scripts and real-world use cases.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-gray-800 text-center px-6">
+    <h3 class="text-3xl font-bold text-green-400 mb-6">Get in Touch</h3>
+    <p class="text-gray-300 mb-4">Got code to share or questions?</p>
+    <a href="mailto:info@linux-dev.com" class="text-green-400 hover:underline">info@linux-dev.com</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 text-center py-6 text-gray-500 text-sm">
+    &copy; 2025 linux-dev.com — Built by and for Linux Python Developers.
+  </footer>
+
+</body>
+</html>
